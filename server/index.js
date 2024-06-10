@@ -1,12 +1,14 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const userRoutes = require('./Routes/userRoutes');
 
 const app = express();
 require('dotenv').config();
 
 app.use(express.json());
 app.use(cors());
+app.use("/api/users",userRoutes)
 
 app.get("/",(req,res)=>{
     res.send("Welcome");
