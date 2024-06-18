@@ -71,4 +71,4 @@ const getUsers = async (req, res) => {
     }
 }
 
-module.exports = { registerUser, loginUser, findUser,getUsers }
+module.exports = { registerUser, loginUser, findUser, getUsers }
